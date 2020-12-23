@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html><head><title>Wide Gamut Color Management Test</title></head><style>
+    * {
+        box-sizing: border-box;
+    }
+
+    table {
+        border-spacing: 0;
+    }
+
+    td { 
+        width: 200px;
+        padding: 0;
+    }
+
+    .header td {
+        border-right: 1px solid black;
+        padding: 0 2px;
+    }
+
+    .header td:nth-child(odd) {
+        background: #e0e0e0;
+    }
+
+    .default-hide {
+        display: none;
+    }
+
+    @supports(color: color(display-p3 1 0 0)) {
+        .p3bg {
+            background-color: color(display-p3 1 0 0);
+        }
+        .hide-on-supported-color-display-p3 {
+            display: none;
+        }
+        span.show-on-supported-color-display-p3 {
+            display: inline;
+        }
+    }
+
+    @media (color-gamut: srgb) {
+        p.show-on-supported-color-gamut-srgb { display: block; }
+    }
+
+    @media (color-gamut: p3) {
+        p.show-on-supported-color-gamut-p3 { display: block; }
+    }
+
+    @media (color-gamut: rec2020) {
+        p.show-on-supported-color-gamut-rec2020 { display: block; }
+    }
+</style><body>
+<table>
+<tr class="header">
+    <td>(1)</td>
+    <td>(2)</td>
+    <td>(3)</td>
+    <td>(4)</td>
+    <td>(5)</td>
+    <td>(6)</td>
+</tr>
+<tr class="header">
+    <td>CSS color #ff0000 (sRGB)</td>
+    <td>Untagged (sRGB) red image</td>
+    <td>sRGB red in Display P3 image</td>
+    <td>sRGB red (Left)<br>Display P3 red (Right)</td>
+    <td>Display P3 red</td>
+    <td>CSS color(display-p3 1 0 0)</td>
+</tr>
+<tr>
+    <td><div style="width: 200px; height: 200px; background: #ff0000;display: inline-block"></div></td>
+    <td><img src="untagged-red.png"></img></td>
+    <td><img src="srgb-red-in-display-p3.png"></img></td>
+    <td><img src="half-srgb.png"></img></td>
+    <td><img src="display-p3-red.png"></img></td>
+    <td><div class="p3bg" style="width: 200px; height: 200px; display: inline-block"><span class="hide-on-supported-color-display-p3">Not supported on current browser. <a href="https://caniuse.com/css-color-function" rel="noopener" target="_blank">More info</a></span></div></td>
+</tr>
+</table>
+<p>(1), (2), (3), (4.Left) should look identical [a].</p>
+<p>(4.Right), (5)<span class="default-hide show-on-supported-color-display-p3">, (6)</span> should look identical [b].</p>
+<p>[a] and [b] should not look identical on wide gamut displays.</p>
+
+<p class="default-hide show-on-supported-color-gamut-srgb">Current browser accepts <code>@media(color-gamut: srgb)</code></p>
+
+<p class="default-hide show-on-supported-color-gamut-p3">Current browser accepts <code>@media(color-gamut: p3)</code></p>
+
+<p class="default-hide show-on-supported-color-gamut-rec2020">Current browser accepts <code>@media(color-gamut: rec2020)</code></p>
