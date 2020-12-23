@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Wide Gamut Test</string>
+    <string name="launch_opengl_es_test">Launch OpenGL ES Test</string>
+    <string name="display_p3_red_image">Display P3 red image</string>
+    <string name="split_image">sRGB red (Left)\nDisplay P3 red (Right)</string>
+    <string name="srgb_red_in_display_p3_tagged_image">sRGB red in Display P3 tagged image</string>
+    <string name="untagged_red_image">Untagged red image</string>
+    <string name="layout_background_ff0000">Layout background #ff0000</string>
+    <string name="gl_test_title">Wide Gamut Test (OpenGL ES)</string>
+    <string name="android_ui_test_title">Wide Gamut Test (Android UI)</string>
+    <string name="app_desc_1">This application uses standard Android APIs to test wide gamut support on your device.</string>
+    <string name="known_good_devices">Known good devices:</string>
+    <string name="app_desc_2">API support for wide gamut is added in Android 8.1. However, there are still some device vendors having trouble handling it properly nowadays.</string>
+    <string name="how_to_test_description2">Unfortunately, even if the application requests a wide color gamut display, the application has no way of knowing if the device is displaying the expected colors correctly. You may need to compare the device screen to a reference or measure it using a spectrometer/colorimeter.</string>
+    <string name="tell_me_more">… (Tell me more! )</string>
+    <string name="recent_ios_devices">Recent iOS devices (open browser test in Safari)</string>
+    <string name="other_available_refs">Other available references:</string>
+    <string name="pc_display_with_100_srgb_coverage">PC display with 100% sRGB coverage</string>
+    <string name="launch_android_ui_test">Launch Android UI Test</string>
+    <string name="launch_web_browser_test">Launch Web Browser Test</string>
+    <string name="how_to_test">How to test:</string>
+    <string name="how_to_test_description">This application will request a wide gamut view and present sRGB red and Display P3 red on it. You need to check if the device shows two colors correctly.</string>
+    <string name="common_mistakes">Common pitfalls:</string>
+    <string name="no_awareness_of_wide_gamut">1. No (awareness of) wide gamut: Display P3 red looks identical to sRGB red.</string>
+    <string name="color_profile_mismatch">2. Color profile mismatch: Software has done all necessary color conversion, but the display is set to an incorrect mode.</string>
+    <string name="no_color_management">3. No color management: Both Display P3 red and untagged red are shown as display native or calibrated red.</string>
+    <string name="no_egl_extension">EGL_EXT_gl_colorspace_display_p3 extension not availiable</string>
+</resources>

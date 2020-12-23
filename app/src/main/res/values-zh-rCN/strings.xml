@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">广色域测试</string>
+    <string name="launch_opengl_es_test">运行 OpenGL ES 测试</string>
+    <string name="display_p3_red_image">Display P3 红色图像</string>
+    <string name="split_image">sRGB 红色（左）\nDisplay P3 红色（右）</string>
+    <string name="srgb_red_in_display_p3_tagged_image">Display P3 图像中的 sRGB 红色</string>
+    <string name="untagged_red_image">未标记色彩空间的红色图像</string>
+    <string name="layout_background_ff0000">布局背景颜色 #ff0000</string>
+    <string name="gl_test_title">广色域测试（OpenGL ES）</string>
+    <string name="android_ui_test_title">广色域测试（Android UI）</string>
+    <string name="app_desc_1">这个应用使用标准 Android API 来测试设备的广色域支持。</string>
+    <string name="app_desc_2">Android 8.1 中就已加入广色域 API 支持，然而目前仍有一些厂商不能正确处理应用的广色域请求。</string>
+    <string name="how_to_test_description2">不幸的是，即使应用请求了广色域显示，应用也无法得知设备是否正确显示了预期的颜色。您可能需要将设备屏幕与参照显示进行比对，或者使用光度计/色度计进行测量。</string>
+    <string name="known_good_devices">已知正确的设备：</string>
+    <string name="tell_me_more">……（让我知道更多实现正确的设备！）</string>
+    <string name="other_available_refs">其他可用参照：</string>
+    <string name="pc_display_with_100_srgb_coverage">100% sRGB 覆盖的电脑显示屏</string>
+    <string name="launch_android_ui_test">运行 Android UI 测试</string>
+    <string name="launch_web_browser_test">运行浏览器测试</string>
+    <string name="recent_ios_devices">近年的 iOS 设备（使用 Safari 进行浏览器测试）</string>
+    <string name="how_to_test">如何测试：</string>
+    <string name="how_to_test_description">本应用将请求广色域视图并在上面显示 sRGB 红点和 Display P3 红点，您需要检查设备是否正确显示了这两个颜色。</string>
+    <string name="common_mistakes">常见错误：</string>
+    <string name="no_awareness_of_wide_gamut">1. （Android 系统认为）没有广色域屏幕：显示的 Display P3 红色在视觉上与 sRGB 红色一致。</string>
+    <string name="color_profile_mismatch">2. 色彩配置不匹配：软件进行了所有必要的颜色转换，但显示硬件设置为错误的模式。</string>
+    <string name="no_color_management">3. 没有色彩管理：Display P3 红色和未指定色彩空间的红色均显示为屏幕的原生或校准红色。</string>
+    <string name="no_egl_extension">缺少 EGL_EXT_gl_colorspace_display_p3 扩展</string>
+</resources>
