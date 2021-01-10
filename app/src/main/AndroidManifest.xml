@@ -19,7 +19,7 @@
         <activity android:name="xyz.cirno.wcgtest.GLActivity" />
         <activity
             android:name="xyz.cirno.wcgtest.MainActivity"
-            android:colorMode="wideColorGamut">
+            >
         </activity>
     </application>
 
