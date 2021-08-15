@@ -27,7 +27,7 @@
     <string name="no_color_management">3. 没有色彩管理：Display P3 红色和未指定色彩空间的红色均显示为屏幕的原生或校准红色。</string>
     <string name="no_egl_extension">缺少 EGL_EXT_gl_colorspace_display_p3 扩展</string>
     <string name="enable_wide_gamut_mode">请求广色域模式</string>
-    <string name="enable_wide_gamut_description">切换色彩模式不应改变屏幕上的 sRGB 颜色。</string>
+    <string name="enable_wide_gamut_description">切换色彩模式应改变屏幕上的 Display P3 颜色。</string>
     <string name="recent_google_pixel_devices">近年的 Google Pixel 设备</string>
     <string name="recent_sony_devices">近年的 Sony 设备</string>
     <string name="recent_xiaomi_devices">近年的小米设备</string>

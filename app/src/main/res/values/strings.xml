@@ -24,9 +24,9 @@
     <string name="no_awareness_of_wide_gamut">1. No (awareness of) wide gamut: Display P3 red looks identical to sRGB red.</string>
     <string name="color_profile_mismatch">2. Color profile mismatch: Software has done all necessary color conversion, but the display is set to an incorrect mode.</string>
     <string name="no_color_management">3. No color management: Both Display P3 red and untagged red are shown as display native or calibrated red.</string>
-    <string name="no_egl_extension">EGL_EXT_gl_colorspace_display_p3 extension not availiable</string>
+    <string name="no_egl_extension">EGL_EXT_gl_colorspace_display_p3 extension not available</string>
     <string name="enable_wide_gamut_mode">Request Wide Gamut Mode</string>
-    <string name="enable_wide_gamut_description">sRGB colors on screen should change on color mode toggles.</string>
+    <string name="enable_wide_gamut_description">Display P3 colors on screen should change on color mode toggles.</string>
     <string name="recent_google_pixel_devices">Recent Google Pixel devices</string>
     <string name="recent_sony_devices">Recent Sony devices</string>
     <string name="recent_xiaomi_devices">Recent Xiaomi devices</string>

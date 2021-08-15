@@ -19,12 +19,10 @@ public class MainActivity extends Activity {
         setTitle(R.string.android_ui_test_title);
         this.setContentView(R.layout.activity_main);
         Window w = getWindow();
-        findViewById(R.id.switch1).setOnClickListener((view)->{
-            Switch s = (Switch)view;
-            w.setColorMode(s.isChecked() ? ActivityInfo.COLOR_MODE_WIDE_COLOR_GAMUT : ActivityInfo.COLOR_MODE_DEFAULT);
+        ((Switch)findViewById(R.id.switch1)).setOnCheckedChangeListener((view, checked)->{
+            w.setColorMode(checked ? ActivityInfo.COLOR_MODE_WIDE_COLOR_GAMUT : ActivityInfo.COLOR_MODE_DEFAULT);
         });
-
-
+        w.setColorMode(ActivityInfo.COLOR_MODE_WIDE_COLOR_GAMUT);
     }
 
     @Override

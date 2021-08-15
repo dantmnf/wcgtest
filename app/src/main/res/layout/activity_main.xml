@@ -13,6 +13,7 @@
         android:id="@+id/switch1"
         android:layout_width="match_parent"
         android:layout_height="48dp"
+        android:checked="true"
         android:text="@string/enable_wide_gamut_mode" />
 
     <TextView
@@ -30,13 +31,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:shrinkColumns="0">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
-            </LinearLayout>
 
             <TableRow
                 android:layout_width="match_parent"
